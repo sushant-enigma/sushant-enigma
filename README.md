@@ -1,18 +1,19 @@
 ### Sushant Nagil
 
-Infrastructure engineer and team lead at Polaris Smart Metering in Jaipur, India. I build and run the cloud platform behind smart-metering rollouts for Indian state utilities. It carries data for 1.5 million meters on Kubernetes across AWS and OCI, with Kafka and MQTT handling the device traffic.
+DevOps engineer and infrastructure team lead at Polaris Smart Metering, Jaipur. I build and look after the AWS and OCI platforms that state electricity utilities across India use to collect and manage smart-meter data.
+
+Most of my work is in the small decisions that keep a platform healthy: how a cluster scales, where a database should run, which alert is worth waking someone up for, and what a change will cost before it ships. I specialise in Kubernetes autoscaling, Kafka and MQTT, multi-account AWS and FinOps.
 
 [Website](https://sushantnagil.com) · [LinkedIn](https://www.linkedin.com/in/sushant-nagil-3584881ba/) · [Resume (PDF)](https://sushantnagil.com/Sushant_Nagil_Resume.pdf) · nagilsushant@gmail.com
 
-#### What I work on
+#### Areas
 
-- **Kubernetes:** four production EKS clusters with layered autoscaling: Karpenter for nodes, KEDA on Kafka lag, HPA for request services and Goldilocks-guided VPA. I also run the EKS version upgrades across five AWS accounts.
-- **Messaging:** EMQX clusters for meter connections, and Kafka. I moved one production cluster from MSK to Strimzi on KRaft, and from ElastiCache to Valkey.
-- **FinOps:** cost across a 24-account AWS estate, with about $45K a year in recurring savings.
-- **Governance:** the landing zone, SCP guardrails, tag policies and SSO across the organisation.
-- **On-call:** incident response and postmortems for the head-end and meter-data systems. A few of them are written up on [my site](https://sushantnagil.com/#incidents).
-
-I lead a team of five: three DevOps engineers, a support engineer and a security engineer.
+- **Kubernetes and autoscaling:** EKS and OKE, Karpenter, KEDA, HPA and VPA, Helm, Argo CD
+- **Kafka and MQTT:** Strimzi, MSK, MirrorMaker 2, EMQX
+- **Cost and FinOps:** right-sizing, reserved capacity, retention policies, cost allocation
+- **Accounts, security and networking:** Organizations, SCPs, IAM Identity Center, VPCs, site-to-site VPN
+- **Databases and DR:** PostgreSQL, Aurora, MySQL, pgBackRest
+- **Monitoring and on-call:** Prometheus, Grafana, Loki, CloudWatch, postmortems
 
 #### Certifications
 
@@ -23,4 +24,4 @@ I lead a team of five: three DevOps engineers, a support engineer and a security
 
 #### On GitHub
 
-- [portfolio-site](https://github.com/sushant-enigma/portfolio-site): the source for sushantnagil.com. It's a static site on Cloudflare Workers with a strict Content Security Policy and Subresource Integrity. Its WebGL scene adapts to the visitor's GPU, and a daily workflow checks the live site from outside.
+- [portfolio-site](https://github.com/sushant-enigma/portfolio-site): the source for sushantnagil.com. It's a static site on Cloudflare Workers with a strict Content Security Policy and pinned scripts. The background is rendered once and served as video, and a daily workflow checks the live site from outside.
